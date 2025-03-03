@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .fullWidth {
+        width: 100%;
+      }
+      .halfWidth {
+        width: 300px;
+      }
+      .head {
+        max-width: 600px;
+        margin: auto;
+        display: block;
+      }
+      .table {
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        table-layout: fixed;
+        width: 100%;
+        max-width: 600px;
+        border-spacing: 0;
+      }
+      .tbody {
+        width: 100%;
+      }
+
+      .blueText {
+        color: #0a4295;
+        font-weight: bold;
+      }
+
+      .title {
+        color: #0a4295;
+        font-size: 17px;
+        line-height: 30px;
+      }
+
+      .img {
+        width: 290px;
+        height: 200px;
+        transform: scale(3.5, 4);
+      }
+
+      .imgTextContainer {
+        width: 269px;
+        word-wrap: break-word;
+        padding: 4px;
+      }
+
+      .button {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        background-color: #0a4295;
+        border-radius: 12px;
+        padding: 4px 0;
+        margin: 4px 0 6px 0;
+        width: 250px;
+      }
+      .a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+
+      .colReverse {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .icon {
+        height: 20px;
+        width: 20px;
+        color: #ffffff;
+      }
+
+      .iconContainer {
+        border-radius: 50%;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px;
+      }
+
+      .iconAndTextContainer {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 10px;
+        margin: 4px 0;
+      }
+
+      .gridContainerWrapper {
+        background-color: #0a4295;
+        color: #ffffff;
+        padding: 1rem;
+        margin: 12px 0;
+      }
+
+      .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer {
+        font-size: 10px;
+        margin-top: 12px;
+      }
+
+      .aliceBlue {
+        background-color: aliceblue;
+        border-radius: 24px;
+      }
+
+      .li {
+        line-height: 30px;
+      }
+
+      .blueBg {
+        background-color: aliceblue;
+      }
+
+      .spImg {
+        width: 290px;
+        height: 200px;
+        transform: scale(2.5, 4);
+        padding-top: 10px;
+      }
+      .splTd {
+        padding: 0 18px;
+      }
+
+      .orangeColor {
+        color: #ff6600;
+      }
+
+      td {
+        min-width: 300px;
+      }
+
+      @media (max-width: 599px) {
+        .table tr {
+          display: block;
+        }
+        .table tr td {
+          display: block;
+        }
+        .button {
+          width: 427px;
+          margin: auto;
+        }
+        .imgTextContainer {
+          width: 427px;
+          margin: auto;
+        }
+        .img {
+          width: 427px;
+          height: 270px;
+          margin: auto;
+          display: block;
+        }
+        .colReverse {
+          display: flex !important;
+          flex-direction: column-reverse;
+          align-items: normal;
+        }
+        .aliceBlue {
+          margin: 12px 0;
+          background-color: #ffffff;
+        }
+      }
+    </style>
+  </head>
+  <body style="margin: 0; padding: 0">
+    <table class="table">
+      <tbody class="tbody">
+        <tr>
+          <td>
+            <img src="images/Head.jpeg" class="head" />
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">Hello,</td>
+        </tr>
+
+        <tr>
+          <td style="height: 12px"></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            Remember how you had to call or email for every little insurance
+            query ?<br />
+            Those days are over !<br />
+            Everything you need is now available right in your Whatsapp.
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            Save this number :
+            <a href="https://wa.me/917854704888" style="text-decoration: none"
+              >+91 7854704888</a
+            >
+            to unlock your Personal Insurance Assistance.
+          </td>
+        </tr>
+
+        <tr>
+          <td style="height: 12px"></td>
+        </tr>
+
+        <tr class="blueBg">
+          <td class="splTd">
+            <div class="title">Here's why you'll love it :</div>
+            <li class="li">No new apps to download</li>
+            <li class="li">No forms to fill</li>
+            <li class="li">No waiting on calls</li>
+            <li class="li">No more searching for documents</li>
+            <li class="li">Accessible 24*7</li>
+          </td>
+
+          <td>
+            <img src="images/1.png" class="spImg" />
+          </td>
+        </tr>
+
+        <tr>
+          <td style="height: 12px"></td>
+        </tr>
+
+        <tr>
+          <td colspan="2" class="title">
+            Everything you can do in your Whatsapp now:
+          </td>
+        </tr>
+
+        <tr>
+          <td style="height: 12px"></td>
+        </tr>
+
+        <tr>
+          <td class="aliceBlue">
+            <img src="images/2.png" class="img" />
+          </td>
+          <td>
+            <div class="title imgTextContainer" style="color: #ff6600">
+              Hassle-free Renewals & Easy EMIs
+            </div>
+            <div class="imgTextContainer">
+              Don't let your coverage lapse! <br />
+              Renew policies or pay your EMIs with just a few clicks, and you
+              will be covered in minutes.
+            </div>
+            <div class="button" style="background-color: #ff6600">
+              <a href="https://wa.me/917854704888" class="a">Try Now</a>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="height: 12px"></td>
+        </tr>
+
+        <tr class="colReverse">
+          <td>
+            <div class="title imgTextContainer">Quick Claim Filing</div>
+            <div class="imgTextContainer">
+              When you need us most, we're now just a message away. No
+              paperwork, no calls - just simple, quick claim intimation at your
+              fingertips.
+            </div>
+            <div class="button">
+              <a href="https://wa.me/917854704888" class="a">Try Now</a>
+            </div>
+          </td>
+          <td class="aliceBlue">
+            <img src="images/3.png" class="img" />
+          </td>
+        </tr>
+
+        <tr>
+          <td style="height: 12px"></td>
+        </tr>
+
+        <tr>
+          <td class="aliceBlue">
+            <img src="images/4.png" class="img" />
+          </td>
+          <td>
+            <div class="title imgTextContainer" style="color: #ff6600">
+              Find Cashless Networks
+            </div>
+            <div class="imgTextContainer">
+              Looking for the nearest cashless garage or hospital ? Get instant
+              access to our complete network list. Find the nearest cashless
+              facility when you need it most, complete with addresses and
+              contact details.
+            </div>
+            <div class="button" style="background-color: #ff6600">
+              <a href="https://wa.me/917854704888" class="a">Try Now</a>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="height: 12px"></td>
+        </tr>
+
+        <tr class="colReverse">
+          <td>
+            <div class="title imgTextContainer" style="color: #ff6600">
+              Buy Policies Seamlessly
+            </div>
+            <div class="imgTextContainer">
+              Need a new policy ? Now you can get quick quotes, compare options
+              and make informed decision. Just let us know the coverage you
+              need, and we'll guide you through the simplest process to
+              purchase.
+            </div>
+            <div class="button" style="background-color: #ff6600">
+              <a href="https://wa.me/917854704888" class="a">Try Now</a>
+            </div>
+          </td>
+          <td class="aliceBlue">
+            <img src="images/5.png" class="img" style="transform: scale(2.5)" />
+          </td>
+        </tr>
+
+        <tr>
+          <td style="height: 12px"></td>
+        </tr>
+
+        <tr>
+          <td class="aliceBlue">
+            <img src="images/6.png" class="img" />
+          </td>
+          <td>
+            <div class="title imgTextContainer">Instant Document Access</div>
+            <div class="imgTextContainer">
+              Request and receive your policy documents, health cards and tax
+              proofs instantly in your chat.
+            </div>
+            <div class="button">
+              <a href="https://wa.me/917854704888" class="a">Try Now</a>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="height: 12px"></td>
+        </tr>
+
+        <tr class="colReverse">
+          <td>
+            <div class="title imgTextContainer" style="color: #ff6600">
+              Expert Assistance on Demand
+            </div>
+            <div class="imgTextContainer">
+              Prefer a human Touch ? Connect instantly with our insurance
+              experts through chat or ask a query to get personalized guidance
+              and solutions.
+            </div>
+            <div class="button" style="background-color: #ff6600">
+              <a href="https://wa.me/917854704888" class="a">Try Now</a>
+            </div>
+          </td>
+          <td class="aliceBlue">
+            <img src="images/7.png" class="img" />
+          </td>
+        </tr>
+
+        <tr>
+          <td style="height: 12px"></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            And we're just getting started! We're constantly adding new features
+            and improving existing ones to make your insurance journey even
+            smoother.
+          </td>
+        </tr>
+
+        <tr>
+          <td style="height: 12px"></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">Ready to make managing your insurance easier?</td>
+        </tr>
+
+        <tr>
+          <td style="height: 12px"></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            Simply send Hi to
+            <a href="https://wa.me/917854704888" style="text-decoration: none">
+              +91 78457 04888</a
+            >
+            to get started.
+          </td>
+        </tr>
+
+        <tr>
+          <td>Simple. Quick. Convenient.</td>
+        </tr>
+
+        <tr>
+          <td style="height: 12px"></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">Your Trusted Partner,</td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <a
+              href="https://www.royalsundaram.in/"
+              target="_blank"
+              style="text-decoration: none"
+              >Royal Sundaram</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <div class="footer">
+              Royal Sundaram General Insurance Co. Limited. All Rights Reserved.
+              IRDAI Registration no.: 102. Granted on October 23, 2000. CIN
+              U67200TN2000PLC045611 | Advertisement No.: RS-NL-2024-25-347. For
+              more product details or risk factors, terms and conditions please
+              read the sales brochure carefully, before concluding a salel Call:
+              <a
+                href="https://wa.me/917854704888"
+                target="_blank"
+                style="color: #000000; text-decoration: none"
+                >+91 78457 04888</a
+              >
+              |
+              <a
+                href="https://www.royalsundaram.in/"
+                target="_blank"
+                style="color: #000000; text-decoration: none"
+                >https://www.royalsundaram.in/</a
+              >
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -22,7 +22,7 @@
         table-layout: fixed;
         width: 100%;
         max-width: 600px;
-        border-spacing: 0;
+        border-spacing: 20px 0;
       }
       .tbody {
         width: 100%;
@@ -143,6 +143,10 @@
         min-width: 300px;
       }
 
+      .flexbox {
+        display: flex;
+      }
+
       @media (max-width: 599px) {
         .table tr {
           display: block;
@@ -172,6 +176,9 @@
         .aliceBlue {
           margin: 12px 0;
           background-color: #ffffff;
+        }
+        .flexbox {
+          display: block;
         }
       }
     </style>
@@ -217,17 +224,19 @@
         </tr>
 
         <tr class="blueBg">
-          <td class="splTd">
-            <div class="title">Here's why you'll love it :</div>
-            <li class="li">No new apps to download</li>
-            <li class="li">No forms to fill</li>
-            <li class="li">No waiting on calls</li>
-            <li class="li">No more searching for documents</li>
-            <li class="li">Accessible 24*7</li>
-          </td>
+          <td class="splTd" colspan="2">
+            <div class="flexbox">
+              <div>
+                <div class="title">Here's why you'll love it :</div>
+                <li class="li">No new apps to download</li>
+                <li class="li">No forms to fill</li>
+                <li class="li">No waiting on calls</li>
+                <li class="li">No more searching for documents</li>
+                <li class="li">Accessible 24*7</li>
+              </div>
 
-          <td>
-            <img src="images/1.png" class="spImg" />
+              <div><img src="images/1.png" class="spImg" /></div>
+            </div>
           </td>
         </tr>
 
